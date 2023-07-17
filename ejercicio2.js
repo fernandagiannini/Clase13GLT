@@ -1,10 +1,10 @@
 class Hero {
-    constructor (name = 'heroe', ranking, health, damage, experience){
+    constructor (name = 'heroe'){
         this.name = name
-        this.ranking = ranking
-        this.health = health
-        this.damage = damage
-        this. experience = experience
+        this.ranking = '00'
+        this.health = 100
+        this.damage = 5
+        this. experience = 0
     }
     talk(nameToSayHi){
         console.log(`Hola ${nameToSayHi}`)
@@ -20,12 +20,12 @@ class Hero {
 
 }
 
-const createHero = (name, ranking, health, damage, experience) => {
-    const newHero = new Hero (name, ranking, health, damage, experience)
+const createHero = (name) => {
+    const newHero = new Hero (name)
     return newHero
 }
 
-superman = createHero('Superman', '00', 100, 5, 0)
+superman = createHero('Superman')
 console.log(superman)
 
 const NAME_TO_SAY_HI = 'Fer'
